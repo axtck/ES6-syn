@@ -1,4 +1,4 @@
-const cars = ['Audi', 'BMW', 'Mercedes', 'Honda', 'VW', 'Peugeot'];
+const cars = ["Audi", "BMW", "Mercedes", "Honda", "VW", "Peugeot"];
 
 const carsSliced = cars.slice();
 const firstTwo = cars.slice(0, 2);
@@ -17,4 +17,4 @@ console.log(middleTwo);
 console.log(lastTwo);
 console.log(lastTwoOtherMethod);
 
-console.log(cleanDate('20201120'));
+console.log(cleanDate("20201120"));

@@ -7,7 +7,7 @@ Function that is called for every element of arr.
 Each time callback executes, the returned value is added to new_array.
 
 When not to use map():
-Since map builds a new array, using it when you aren't using the returned array is an anti-pattern; 
+Since map builds a new array, using it when you aren"t using the returned array is an anti-pattern; 
 use forEach or for-of instead.
 */
 

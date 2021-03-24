@@ -8,7 +8,7 @@
 
 ### Properties
 ```javascript
-constructor // Returns the function that created the Array object's prototype
+constructor // Returns the function that created the Array object"s prototype
 length // Sets or returns the number of elements in an array
 prototype // Allows you to add properties and methods to an Array object
 ```
@@ -51,16 +51,16 @@ valueOf() // Returns the primitive value of an array
 
 Some example usage 
 ```javascript
-['a', 'b', 'c'].length // 3
-['a', 'b', 'c'].concat(['d', 'e']) // ['a', 'b', 'c', 'd', 'e']
-['a', 'b', 'c'].join('_') // 'a_b_c'
-['a', 'b', 'c'].slice(2) // ['c']
-['a', 'b', 'c', 'b', 'b'].indexOf('b') // 1
-['a', 'b', 'c', 'b', 'b'].lastIndexOf('b') // 4
+["a", "b", "c"].length // 3
+["a", "b", "c"].concat(["d", "e"]) // ["a", "b", "c", "d", "e"]
+["a", "b", "c"].join("_") // "a_b_c"
+["a", "b", "c"].slice(2) // ["c"]
+["a", "b", "c", "b", "b"].indexOf("b") // 1
+["a", "b", "c", "b", "b"].lastIndexOf("b") // 4
 [1, 2, 3, 4].map(item => item * 10) // [10, 20, 30, 40]
 [1, 2, 3, 4].reduce((sum, cur) => sum + cur) // 10
 [4, 2, 5, 1, 3].sort() // [1, 2, 3, 4, 5]
-['a', 'b', 'c'].reverse() // ['c', 'b', 'a']
+["a", "b", "c"].reverse() // ["c", "b", "a"]
 [1, 2, 3, 4].forEach(item => console.log(item))
 [1, 2, 3, 4].every(item => item > 0) // true
 [-1, -2, -3, 4].some(item => item > 0) // true
@@ -69,6 +69,6 @@ Some example usage
 [1, 2, 3].unshift(4, 5) // [4, 5, 1, 2, 3]
 [1, 2, 3].pop() // 3; base array - [1, 2]
 [1, 2, 3].push(4, 5) // 5; base array - [1, 2, 3, 4, 5]
-["I'm", "learning", "JavaScript"].splice(1, 1) // ["learning"]; ["I'm", "JavaScript"]
+["I'm", "learning", "JavaScript"].splice(1, 1) // ["learning"]; ["I"m", "JavaScript"]
 ```
 ([source](https://dev.to/sakhnyuk/js-array-cheatsheet-31h0))
