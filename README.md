@@ -1,9 +1,10 @@
-# Higher order functions in JavaScript
-***Refreshing memory on higher order functions and functional programming in js.***
+# ES6
+***JS ES6 higher order functions, syntax principles and functional programming.***
 
 ---
 
 ## Parts to cover
 * arrow syntax
-* arrays (map, pop, slice...)
+* array methods (map, pop, slice...)
+* operators (spread, ternary...)
 * ...
