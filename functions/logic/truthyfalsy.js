@@ -76,3 +76,16 @@ logicalOrOperator(false, "dog"); // dog
 logicalOrOperator("dog", false); // dog
 logicalOrOperator("dog", "cat"); // dog
 console.log("----------------------");
+
+const logicalOrOperator2 = (val1, val2, val3) => {
+    console.log(val1 || val2 || val3);
+}
+
+console.log("----- Logical OR for 3 values -----");
+logicalOrOperator2(false, "dog", "cat"); // dog
+logicalOrOperator2("dog", false, "cat"); // dog 
+logicalOrOperator2(false, false, "dog"); // dog
+logicalOrOperator2(1, false, "dog"); // 1 
+console.log("-----------------------------------");
+
+
