@@ -45,3 +45,34 @@ checkTruthyOrFalsy("");
 checkTruthyOrFalsy(0);
 checkTruthyOrFalsy(false);
 console.log("-------------------------------------");
+
+const logicalAndOperator = (val1, val2) => {
+    console.log(val1 && val2);
+}
+
+console.log("----- Logical AND for 2 values -----");
+logicalAndOperator(false, "dog"); // false
+logicalAndOperator("dog", false); // false
+logicalAndOperator("dog", "cat"); // cat
+console.log("------------------------------------");
+
+const logicalAndOperator2 = (val1, val2, val3) => {
+    console.log(val1 && val2 && val3);
+}
+
+console.log("----- Logical AND for 3 values -----");
+logicalAndOperator2(false, false, "dog"); // false 
+logicalAndOperator2("dog", false, "cat"); // false
+logicalAndOperator2("dog", "dog", "cat"); // cat
+logicalAndOperator2("dog", 4, 25); // 25 
+console.log("-------------------------------------");
+
+const logicalOrOperator = (val1, val2) => {
+    console.log(val1 || val2);
+}
+
+console.log("----- Logical OR -----");
+logicalOrOperator(false, "dog"); // dog
+logicalOrOperator("dog", false); // dog
+logicalOrOperator("dog", "cat"); // dog
+console.log("----------------------");
