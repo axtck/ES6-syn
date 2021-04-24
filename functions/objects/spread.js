@@ -44,7 +44,7 @@ const updatePc2 = (templatePc, rams, chipsets) => {
         const newPc = { ...templatePc }
         newPc.ram = rams?.[i] ? rams[i] : templatePc.ram;
 
-        let newMotherboard = { ...templatePc.motherboard };
+        const newMotherboard = { ...templatePc.motherboard };
         newMotherboard.chipset = chipsets?.[i] ? chipsets[i] : templatePc.motherboard.chipset;
         newPc.motherboard = newMotherboard;
 
