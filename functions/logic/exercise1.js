@@ -62,40 +62,43 @@ class Player {
             handString = handString.concat(` ${card.name} of ${card.suit} (${card.value}p) ---`);
         });
 
-        console.log(`${handString.slice(0, -4)}, ${this.score}.`);
+        console.log(`${handString.slice(0, -4)}, ${this.score}p.`);
     }
 }
 
 class Table {
-    constructor(name, players, deck) {
+    constructor(name, players, dealer, deck) {
         this.name = name;
         this.players = players;
+        this.dealer = dealer;
         this.deck = deck;
-
-        // dealer is last player
-        this.dealer = this.players[this.players.length - 1];
-        this.dealer = this.players.slice(-1);
+        this.turn = 0;
     }
 
     deal() {
-        this.players.forEach((player) => {
-            for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 2; i++) {
+            this.players.forEach((player) => {
                 player.hand.push(this.deck.pop());
-            }
-        });
-    }
-
-    hit() {
-
+            });
+            this.dealer.hand.push(this.deck.pop());
+        }
     }
 
     play() {
         this.deal();
+        // this.players.forEach((player) => {
+        //     while (player.score < 11) {
 
+        //         player.hand.push(this.deck.pop());
+
+        //         if (player.score > 21) break;
+        //     }
+        // })
     }
 
     showHands() {
         this.players.forEach((p) => p.showHand());
+        dealer.showHand();
     }
 }
 
@@ -103,9 +106,9 @@ const player1 = new Player("Player1");
 const player2 = new Player("Player2");
 const dealer = new Player("Dealer");
 
-const players = [player1, player2, dealer];
+const players = [player1, player2];
 
-const table1 = new Table("Table1", players, shuffleCards(createDeck(1)));
+const table1 = new Table("Table1", players, dealer, shuffleCards(createDeck(1)));
 
 table1.play();
 
