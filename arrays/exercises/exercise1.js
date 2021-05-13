@@ -7,22 +7,23 @@ twoDaysAgo.setDate(numDay - 2); // set 2 days ago from today
 const twelveDaysAgo = new Date();
 twelveDaysAgo.setDate(numDay - 12); // set 12 days ago from today
 
-const visits = [{
-    location: "Paris",
-    date: today
-},
-{
-    location: "Berlin",
-    date: twoDaysAgo
-},
-{
-    location: "Brussels",
-    date: twoDaysAgo
-},
-{
-    location: "Rome",
-    date: twelveDaysAgo
-}
+const visits = [
+    {
+        location: "Paris",
+        date: today
+    },
+    {
+        location: "Berlin",
+        date: twoDaysAgo
+    },
+    {
+        location: "Brussels",
+        date: twoDaysAgo
+    },
+    {
+        location: "Rome",
+        date: twelveDaysAgo
+    }
 ];
 
 // filtering occurences of dates in specific week
