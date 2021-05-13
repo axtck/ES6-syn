@@ -24,7 +24,7 @@ console.log("Total:");
 console.log(total);
 // expected output: total value
 
-const totalWithInitialValue = numbers.reduce((a, b) => a + b, 10)
+const totalWithInitialValue = numbers.reduce((a, b) => a + b, 10);
 console.log("Total with initial value:");
 console.log(totalWithInitialValue);
 // expected output: total value + initial value (10)
