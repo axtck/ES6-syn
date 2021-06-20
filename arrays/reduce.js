@@ -61,3 +61,33 @@ console.log(priceSum);
 console.log("Method 2:");
 console.log(priceSumBetter);
 
+
+const characters = [
+    { name: 'Jean-Luc Picard', age: 59 },
+    { name: 'Will Riker', age: 29 },
+    { name: 'Deanna Troi', age: 29 }
+];
+
+const charactersAgeCount = characters.map(item => item.age).reduce((acc, val) => {
+    if (acc[val] == null) acc[val] = 1;
+    else acc[val]++;
+    return acc;
+}, {}); // initial value is object
+
+console.log("\nCount age occurences and create object");
+console.log("characters", JSON.stringify(characters));
+console.log("Result", JSON.stringify(charactersAgeCount));
+
+const sentencePieces = ["First", "three", "words", "", "another", "two", "", "", "last"];
+
+const conditionallyJoined = sentencePieces.reduce((acc, val) => {
+    // if value and last item of acc are truthy, join by space
+    if (val && acc[acc.length - 1]) acc[acc.length - 1] += " " + val;
+    // otherwise, push value
+    else acc.push(val);
+    return acc;
+}, []); // initial value is array
+
+console.log("\nConditionally join array");
+console.log("sentencePieces", JSON.stringify(sentencePieces));
+console.log("Result", JSON.stringify(conditionallyJoined));
